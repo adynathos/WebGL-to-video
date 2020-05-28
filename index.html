@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>ICG : Video</title>
+	<meta name="author" content="Krzysztof Lis">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script src="lib/gl-matrix_3.2.1/gl-matrix.js" defer="true"></script>
+<script src="lib/regl_1.5/regl.js" defer="true"></script> <!-- not minified, because we want shader error messages -->
+<script src="lib/webgl-obj-loader_2.0.6/webgl-obj-loader.min.js" defer="true"></script> 
+
+
+<script src="src/icg_web.js" defer="true"></script>
+<script src="src/icg_math.js" defer="true"></script>
+<script src="src/icg_screenshot.js" defer="true"></script>
+
+<script src="src/scene.js" defer="true"></script>
+<script src="src/main.js" defer="true"></script>
+
+<div id="debug-overlay">
+	<p>
+		<!-- <a href="src/main.js">source</a>  -->
+		ICG Exercise: Video
+		⁙⁙ docs:
+		<a href="https://github.com/regl-project/regl/blob/gh-pages/API.md">regl</a>,
+		<a href="http://glmatrix.net/docs/">gl-matrix</a>,
+		<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN</a>
+		⁙⁙ show/hide <strong class="keyboard">z</strong>
+		⁙⁙ video start/stop <strong class="keyboard">r</strong>
+	</p>
+	
+	<p>
+		Press <strong class="keyboard">r</strong> to start recording and then press <strong class="keyboard">r</strong> again when the recording is finished.
+	</p>
+
+	<p>
+		The videos will be shown below. Right-click a video and <em>Save video as</em> to download it.
+	</p>
+
+	<pre id="debug-text"></pre>
+
+	<div id="video-container" />
+</div>
+
+</body>
+</html>
