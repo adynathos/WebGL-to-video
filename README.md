@@ -12,6 +12,7 @@ The detailed information about the ICG project video is [here](https://lgg.epfl.
 * 1920x1080 resolution, preferably 60 frames per second
 * MP4 container with H264 encoding (we ask everyone for the same codec so that we can concatenate the videos without lossy re-encoding, h264 is a popular codec and can be played by web browsers)
 * Choose which elements best demonstrate your achievement - for example video of the rendering, recording of an interactive session, slides about the technical side etc...
+* Your commentary: recorded audio or subtitles (or both). In the commentary, please describe what your project is doing and how you achieved it.
 
 If you do not have previous experience with video capture and editing, we compiled some advice and examples here.
 We also provide code and instructions for capturing video in the WebGL framework.
@@ -190,16 +191,18 @@ Audio: AAC
 <!-- * [Beginner Video Editing Tutorial Using Blender 2.8](https://www.youtube.com/watch?v=bvr54FtfYl4) -->
 
 
-## Audio
+## Audio / Commentary
 
-During the project presentation event the audio is not played, instead we ask you to comment live.
+Usually we ask you to comment the video live during the event, but the lack of in-person meeting makes that infeasible this year.
 
-We are not sure how this will be done this year remotely.
-Recording your commentary and putting it in the video may be a good idea but it is not required.
+Therefore, **please include your commentary as recorded audio or subtitles (or both)**.
+In the commentary, please describe what your project is doing and how you achieved it.
 
 
-In the example project we include creative-commons music generously provided by [Kevin MacLeod](https://incompetech.com/):
+I did not have much to say in the example project so instead I included creative-commons music generously provided by [Kevin MacLeod](https://incompetech.com/):
 
 The Cannery by Kevin MacLeod  
 Link: <https://incompetech.filmmusic.io/song/4485-the-cannery>  
 License: <http://creativecommons.org/licenses/by/4.0/>  
+
+But for the project we would love to hear what *you* have to say about it.
