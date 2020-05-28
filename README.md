@@ -1,6 +1,8 @@
 
 # ICG Project Video
 
+<video src="video/out/Project_WebGL_to_Video.mp4" controls="true" width="640" ></video>
+
 The detailed information about the ICG project video is [here](https://lgg.epfl.ch/teaching/ICG2020/icg_lectures/2020_project_instructions/#final-presentation-video), in summary:
 
 * 2 minutes in length
@@ -47,6 +49,9 @@ The mechanism is illustrated in this example project, please see [`main.js`](./s
 
 
 ### Adapt your project code for video recording
+
+The usage of the video recording script is shown in [`main.js`](./src/main.js).
+
 
 * Include [`icg_screenshot.js`](./src/icg_screenshot.js) in your `index.html`
 ```html
