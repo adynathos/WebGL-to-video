@@ -3,7 +3,7 @@
 
 <!-- <video src="video/out/Project_WebGL_to_Video.mp4" controls="true" width="640" ></video> -->
 
-<a href="video/out/Project_WebGL_to_Video.mp4"><img src="video/images/page_title.svg" width="640" /></a>
+<a href="video/out/Project_WebGL_to_Video.mp4?raw=true"><img src="video/images/page_title.svg" width="640" /></a>
 
 The detailed information about the ICG project video is [here](https://lgg.epfl.ch/teaching/ICG2020/icg_lectures/2020_project_instructions/#final-presentation-video), in summary:
 
