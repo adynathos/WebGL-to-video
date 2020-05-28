@@ -1,7 +1,9 @@
 
 # ICG Project Video
 
-<video src="video/out/Project_WebGL_to_Video.mp4" controls="true" width="640" ></video>
+<!-- <video src="video/out/Project_WebGL_to_Video.mp4" controls="true" width="640" ></video> -->
+
+<a href="video/out/Project_WebGL_to_Video.mp4"><img src="video/images/page_title.svg" width="640" /></a>
 
 The detailed information about the ICG project video is [here](https://lgg.epfl.ch/teaching/ICG2020/icg_lectures/2020_project_instructions/#final-presentation-video), in summary:
 
@@ -163,7 +165,7 @@ The presentation videos is usually 2 minutues, so put `120 * 60` there.
 You can write `120 * 60` into the box and Blender will understand the multiplication.
 
 * Output options  
-File location: `//out/result.mp4`. `//` means *relative to blender file*. 
+File location: `//out/result.mp4`. `//` means *relative to blender file*.  
 File format: FFmpeg video  
 Container: MPEG-4  
 Codec: H.264  
