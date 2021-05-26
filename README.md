@@ -5,7 +5,7 @@
 
 <a href="video/out/Project_WebGL_to_Video.mp4?raw=true"><img src="video/images/page_title.svg" width="640" /></a>
 
-The detailed information about the ICG project video is [here](https://lgg.epfl.ch/teaching/ICG2020/icg_lectures/2020_project_instructions/#final-presentation-video), in summary:
+The detailed information about the ICG project video is [here](https://lgg.epfl.ch/teaching/ICG20/icg_lectures/2021_project_instructions/#final-presentation-video), in summary:
 
 * 2 minutes in length
 * Display the project title and the group member names in the first 5 seconds (There can be an image or video in the background, just please make it readable)
