@@ -1,9 +1,11 @@
-"use strict";
+import {createREGL} from "../lib/regljs_2.1.0/regl.module.js"
+import {vec2, vec3, vec4, mat3, mat4} from "../lib/gl-matrix_3.3.0/esm/index.js"
 
-const {mat2, mat4, mat3, vec4, vec3, vec2} = glMatrix;
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-
-const deg_to_rad = Math.PI / 180;
+import {DOM_loaded_promise, load_text, register_keyboard_action} from "./icg_web.js"
+import {deg_to_rad, mat4_to_string, vec_to_string, mat4_matmul_many} from "./icg_math.js"
+import {icg_mesh_load_obj} from "./icg_mesh.js"
+import {init_scene} from "./scene.js"
+import {CanvasVideoRecording} from "./icg_screenshot.js"
 
 async function main() {
 	/* const in JS means the variable will not be bound to a new value, but the value can be modified (if its an object or array)
@@ -50,7 +52,7 @@ async function main() {
 
 	// Start downloads in parallel
 	const resources = {
-		'mesh_ring_gate': load_mesh_obj(regl, './meshes/ring_gate.obj'),
+		'mesh_ring_gate': icg_mesh_load_obj(regl, './meshes/ring_gate.obj'),
 	};
 
 	[

@@ -56,9 +56,9 @@ The mechanism is illustrated in this example project, please see [`main.js`](./s
 The usage of the video recording script is shown in [`main.js`](./src/main.js).
 
 
-* Include [`icg_screenshot.js`](./src/icg_screenshot.js) in your `index.html`
-```html
-<script src="src/icg_screenshot.js" defer="true"></script>
+* Include [`icg_screenshot.js`](./src/icg_screenshot.js) in your `main.js`
+```js
+import {CanvasVideoRecording} from "./icg_screenshot.js"
 ```
 
 * Set the size of the canvas to the desired video resolution

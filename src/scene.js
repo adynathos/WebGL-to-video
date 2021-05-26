@@ -1,6 +1,7 @@
-"use strict";
+import {vec2, vec3, vec4, mat3, mat4} from "../lib/gl-matrix_3.3.0/esm/index.js"
+import {mat4_matmul_many} from "./icg_math.js"
 
-function init_scene(regl, resources) {
+export function init_scene(regl, resources) {
 
 	const ring_mesh = resources['mesh_ring_gate'];
 
@@ -42,8 +43,6 @@ function init_scene(regl, resources) {
 			}
 		});
 
-		// console.log(batch_draw_calls);
-
 		pipe_ring(batch_draw_calls);
 	}
 
@@ -64,13 +63,7 @@ function init_scene(regl, resources) {
 		const M_rot_spin = mat4.fromZRotation(mat4.create(), cam_angle_spin);
 		const M_rot_z = mat4.fromZRotation(mat4.create(), cam_angle_z);
 
-		//const M_target = mat4.fromTranslation(mat4.create(), cam_target);
-
-		// mat_world_to_cam = M_look_forward_X * M_rot_y * M_rot_z
 		mat4_matmul_many(mat_world_to_cam, M_rot_spin, M_look_forward_X, m_r90, m_rad, M_rot_z);	
-	//	mat4_matmul_many(mat_world_to_cam, M_look_forward_X, m_r90, m_rad, M_rot_z);	
-
-		// m_r90, M_rot_z, m_orb, M_rot_z
 	}
 
 	return {draw_scene, camera_matrix_by_time};

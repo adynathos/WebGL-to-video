@@ -1,6 +1,6 @@
 "use strict";
 
-function framebuffer_to_image_download(regl, buffer, name) {
+export function framebuffer_to_image_download(regl, buffer, name) {
 	const image_array = regl.read({
 		framebuffer: buffer,
 	});
@@ -58,7 +58,7 @@ Recording video from a <canvas> using MediaRecorder
 
 	https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/captureStream
 */
-class CanvasVideoRecording {
+export class CanvasVideoRecording {
 
 	constructor({canvas, videoBitsPerSecond} = {videoBitsPerSecond: 10*1024*1024}) {
 		/*
